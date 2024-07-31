@@ -1,0 +1,34 @@
+.container {
+  max-width: 100%;
+  height: 100vh;
+
+  .header {
+  }
+
+  .sidenav {
+    padding: 10px;
+    width: 200px;
+    .nav-item {
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      a {
+        text-decoration: none;
+        padding: 8px 12px;
+        text-align: left;
+        color: black;
+        border-bottom: 0.5px solid black;
+        &:hover {
+          color: black;
+          background-color: gray;
+        }
+      }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

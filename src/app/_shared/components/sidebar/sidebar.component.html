@@ -1,0 +1,18 @@
+<mat-drawer-container class="container">
+  <mat-drawer #drawer class="sidenav" mode="side" opened>
+    <div class="header">
+      <h1>Angular</h1>
+    </div>
+    <div class="nav-item">
+      <a mat-list-item [routerLink]="'/routing'">Routing</a>
+      <a mat-list-item [routerLink]="'/lifecycle'">lifeCycle</a>
+      <a mat-list-item [routerLink]="'/input-output'">Input Output</a>
+      <a mat-list-item [routerLink]="'/service'">Service</a>
+    </div>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">Open</button>
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-container>
