@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  padding: 4px;
+  background-color: rgb(90, 76, 9);
+
+  a {
+    padding: 4px 12px;
+    color: white;
+    text-decoration: none;
+  }
+}

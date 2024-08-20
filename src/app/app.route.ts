@@ -4,6 +4,9 @@ import { RoutingComponent } from './routing/routing.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { ParentChildComponent } from './parent-child/parent-child.component';
 import { ServiceComponent } from './service/service.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { FromComponent } from './rxjs/from/from.component';
+import { OfComponent } from './rxjs/of/of.component';
 
 export const routes: Routes = [
   {
@@ -30,6 +33,20 @@ export const routes: Routes = [
       {
         path: 'service',
         component: ServiceComponent,
+      },
+      {
+        path: 'rxjs',
+        component: RxjsComponent,
+        children: [
+          {
+            path: 'from-rxjs',
+            component: FromComponent,
+          },
+          {
+            path: 'of-rxjs',
+            component: OfComponent,
+          },
+        ],
       },
     ],
   },

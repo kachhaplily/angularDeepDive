@@ -20,6 +20,10 @@ import { RoutingComponent } from './routing/routing.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { ParentChildComponent } from './parent-child/parent-child.component';
 import { ServiceComponent } from './service/service.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { FromComponent } from './rxjs/from/from.component';
+import { OfComponent } from './rxjs/of/of.component';
+import { CommonUiModule } from './_shared/components/common-ui.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,9 @@ import { ServiceComponent } from './service/service.component';
     LifeCycleComponent,
     ParentChildComponent,
     ServiceComponent,
+    RxjsComponent,
+    FromComponent,
+    OfComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +43,7 @@ import { ServiceComponent } from './service/service.component';
     BrowserAnimationsModule,
     HttpClientModule,
     SharedModule,
+    CommonUiModule,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi()), provideAnimations()],
   bootstrap: [AppComponent],
